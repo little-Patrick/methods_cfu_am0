@@ -32,7 +32,7 @@ p greeting_2
 # What is the return value of your method?
 ## "Hello"
 # How many arguments did you pass your method?
-## Two arugments
+## There are no additional arguments
 
 # 2: Write a method named "custom_greeting" that returns a greeting WITH a specific name.
 def custom_greeting(name)
@@ -50,7 +50,7 @@ p greeting2
 ## "Howdy, Alec"
 ## "Howdy, Thomas"
 # How many arguments did you pass your method?
-## Two arguments
+## One arguments
 # What data type was your argument(s)?
 ## String
 
@@ -69,7 +69,7 @@ p full2
 ## "I know who you are, Patrick Danger Little"
 ## "I know who you are, Jackson Jameson Jones"
 # How many arguments did you pass your method?
-# 2
+## The is being passes three arguments, first, middle and last
 # What data type was your argument(s)?
 # An Array of strings
 
@@ -87,12 +87,16 @@ p num2
 ## 81
 ## 625
 # How many arguments did you pass your method?
-# 2
+# One Argument
 # What data type was your argument(s)?
 # integers
 
+##### Yes, sorry I should have come back to this. I had an 'ah uh...' moment when doing Code accademy. I was thinking that an argument was how many times was the method being called upon in the code after it.
+##### That every time puts statment or anything that had to go back into the def method was an arument. But when referencing aruments in this it was referencing how many variables go in the () in the def method().
+
 # Bonus: Print a sentence that interpolates the return value of your square method.
 
+##### sorry I was being lazy and thought bonus wouldn't be required
 
 # 5: Write a method named "check_stock" that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
@@ -108,3 +112,16 @@ p num2
 
 # check_stock(1, "Salsa");
 # # => "Salsa - running LOW"
+
+def check_stock(num, type)
+  if num == 0 
+    p "#{type} - out of stock!"
+  elsif num <= 3
+    p "#{type} - running LOW"
+  else 
+    p "#{type} is stocked"
+  end
+end
+check1 = check_stock(8, "Coffee")
+check2 = check_stock(1, "Tortilla")
+check3 = check_stock(0, "Wine")
